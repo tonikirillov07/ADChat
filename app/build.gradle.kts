@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.tg.adchat"
+    namespace = "com.tg.let"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.tg.adchat"
+        applicationId = "com.tg.let"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.tg.adchat;
+package com.tg.let;
 
 import org.junit.Test;
 
