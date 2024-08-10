@@ -32,7 +32,11 @@ android {
 }
 
 dependencies {
-
+    implementation("com.google.firebase:firebase-database:21.0.0")
+    implementation("com.google.firebase:firebase-analytics:22.0.2")
+    implementation("com.google.firebase:firebase-bom:33.0.0")
+    implementation("com.google.firebase:firebase-auth:23.0.0")
+    implementation("com.pranavpandey.android:dynamic-toasts:2.1.1")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
