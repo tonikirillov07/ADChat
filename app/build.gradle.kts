@@ -32,6 +32,7 @@ android {
 }
 
 dependencies {
+    implementation("org.apache.kafka:kafka-clients:3.8.0")
     implementation("com.google.firebase:firebase-database:21.0.0")
     implementation("com.google.firebase:firebase-analytics:22.0.2")
     implementation("com.google.firebase:firebase-bom:33.0.0")
