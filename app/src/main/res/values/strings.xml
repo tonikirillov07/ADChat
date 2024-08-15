@@ -12,4 +12,12 @@
     <string name="i_already_have_account">I already have account</string>
     <string name="english_is_one_of_most_popular_languages_in_the_world">English is one of most popular \nlanguages in the world</string>
     <string name="an_exception_has_occurred">An exception has occurred</string>
+    <string name="questionsUsers">С какой целью Вы изучаете английский?</string>
+    <string name="travels">Путешествия</string>
+    <string name="study">Учеба</string>
+    <string name="love">Любовь</string>
+    <string name="interest">Простой интерес</string>
+    <string name="profession">Профессия</string>
+    <string name="development">Развитие</string>
+    <string name="next_list">Далее</string>
 </resources>
