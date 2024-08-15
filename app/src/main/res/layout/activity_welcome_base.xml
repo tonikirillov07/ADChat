@@ -5,12 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_main_base"
+    android:background="@drawable/background_base"
     tools:context=".base.activities.WelcomeActivityBase">
 
     <LinearLayout
         style="@style/tile_base"
+        android:layout_height="325dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="156dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -22,7 +27,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView4"
@@ -34,11 +39,11 @@
 
                 <TextView
                     android:id="@+id/textView5"
+                    style="@style/context_labels_base"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="@string/we_re_let_we_ll_together_make_your_english_better_in_base_level"
-                    style="@style/context_labels_base" />
+                    android:text="@string/we_re_let_we_ll_together_make_your_english_better_in_base_level" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/buttonNext"
@@ -65,6 +70,7 @@
                     android:id="@+id/haveAccountTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
                     android:fontFamily="@font/inter_bold"
                     android:text="@string/i_already_have_account"
                     android:textAlignment="center"
@@ -115,13 +121,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginTop="9dp"
         android:src="@drawable/button_back"
+        android:background="@color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

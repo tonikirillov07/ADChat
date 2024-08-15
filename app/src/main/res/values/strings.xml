@@ -31,9 +31,4 @@
     <string name="help_me_to_generate_strong_password">Помогите мне создать\n надежный пароль</string>
     <string name="youre_done">Все готово!</string>
     <string name="lockwood_welcome">“Меня зовут LockWood! \nЯ помогу тебе с твоим обучением по Английскому языку. \nНажмите кнопку "Далее", чтобы продолжить”</string>
-    <string name="topic">Выбрать тему</string>
-    <string name="paid_content">Платный контент</string>
-    <string name="restoring_life">Восстановление жизни:</string>
-    <string name="additional_settings">Дополнительные настройки</string>
-    <string name="change_language">Изменить язык</string>
 </resources>
