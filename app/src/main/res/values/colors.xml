@@ -13,4 +13,5 @@
     <color name="have_account_textview">#041185</color>
     <color name="context_labels">#D0CDCD</color>
     <color name="edit_text_base">#737373</color>
+    <color name="dialog_text">#ABABAB</color>
 </resources>
