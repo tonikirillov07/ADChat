@@ -1,4 +1,4 @@
-package com.tg.let;
+package com.tg.let.starter.activities;
 
 import android.os.Bundle;
 import android.widget.ImageButton;
@@ -9,7 +9,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.tg.let.utils.AnotherActivity;
+import com.tg.let.MainActivity;
+import com.tg.let.R;
 import com.tg.let.utils.BackButton;
 
 public class QuestionsUserStarter extends AppCompatActivity {

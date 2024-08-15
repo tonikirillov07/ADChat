@@ -10,6 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.tg.let.base.activities.WelcomeActivityBase;
+import com.tg.let.starter.activities.QuestionsUserStarter;
 import com.tg.let.utils.AnotherActivity;
 
 public class MainActivity extends AppCompatActivity {

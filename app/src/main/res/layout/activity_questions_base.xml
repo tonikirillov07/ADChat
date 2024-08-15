@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_main_base"
-    tools:context=".QuestionsActivityBase">
+    tools:context=".base.activities.QuestionsActivityBase">
 
     <TextView
         android:id="@+id/textView9"

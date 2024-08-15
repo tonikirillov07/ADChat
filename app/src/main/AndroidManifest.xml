@@ -13,16 +13,16 @@
         android:theme="@style/Theme.ADChat"
         tools:targetApi="31">
         <activity
-            android:name=".AccountActivityBase"
+            android:name=".base.activities.AccountActivityBase"
             android:exported="false" />
         <activity
-            android:name=".QuestionsUserStarter"
+            android:name=".starter.activities.QuestionsUserStarter"
             android:exported="false" />
         <activity
-            android:name=".QuestionsActivityBase"
+            android:name=".base.activities.QuestionsActivityBase"
             android:exported="false" />
         <activity
-            android:name=".WelcomeActivityBase"
+            android:name=".base.activities.WelcomeActivityBase"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
