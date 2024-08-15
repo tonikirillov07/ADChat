@@ -16,6 +16,9 @@
             android:name=".AccountActivityBase"
             android:exported="false" />
         <activity
+            android:name=".QuestionsUserStarter"
+            android:exported="false" />
+        <activity
             android:name=".QuestionsActivityBase"
             android:exported="false" />
         <activity
