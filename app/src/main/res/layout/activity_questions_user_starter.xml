@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:background="@drawable/button_background_white"
-                android:text="@string/next_list"
+                android:text="@string/next"
                 android:textAllCaps="false"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -130,13 +130,13 @@
         android:layout_marginBottom="29dp"
         android:background="#00BD9B9B"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/settings"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="299dp"

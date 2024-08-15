@@ -22,4 +22,11 @@
     <string name="well_now_create_account_it_s_need_for_statistic_and_for_keep_your_progress_save">Well! Now create account. \nIt’s need for statistic and for\n keep your progress save</string>
     <string name="write_email">Write Email</string>
     <string name="write_your_current_password">Write Password</string>
+    <string name="study">Учеба</string>
+    <string name="love">Любовь</string>
+    <string name="interest">Простой интерес</string>
+    <string name="profession">Профессия</string>
+    <string name="development">Развитие</string>
+    <string name="next_list">Далее</string>
+    <string name="questionsUsers">С какой целью Вы изучаете английский?</string>
 </resources>
