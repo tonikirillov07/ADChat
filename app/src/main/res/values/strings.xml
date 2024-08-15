@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Learning English Team</string>
+    <string name="let_learning_english_team_a1_a2_b1_b2">Привет, мы команда LET - Learning English Team ! Мы вместе прокачаем твои знания. Данное приложение имеет несколько ступеней английского A1-A2(начальный) и B1-B2(средний)</string>
+    <string name="let">Добро пожаловать в LET!</string>
+    <string name="b1_b2">Средний(B1-B2)</string>
+    <string name="a1_a2">Начальный(A1-A2)</string>
 </resources>
