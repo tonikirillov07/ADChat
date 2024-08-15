@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         buttonBase.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, WelcomeActivityBase.class, false));
         buttonStarter.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, QuestionsUserStarter.class, false));
     }
-//привет, проверка связи
+
     private void clickButtonBack(){
         
     }
