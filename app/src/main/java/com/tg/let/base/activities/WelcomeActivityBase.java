@@ -2,6 +2,7 @@ package com.tg.let.base.activities;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,5 +28,8 @@ public class WelcomeActivityBase extends AppCompatActivity {
 
         Button buttonNext = findViewById(R.id.buttonNext);
         buttonNext.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, QuestionsActivityBase.class, false));
+
+        TextView haveAccountTextView = findViewById(R.id.haveAccountTextView);
+        haveAccountTextView.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, EnterInAccountActivity.class, false));
     }
 }

@@ -1,6 +1,8 @@
 package com.tg.let.base.activities;
 
 import android.os.Bundle;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.tg.let.R;
+import com.tg.let.utils.BackButton;
 
 public class EnterInAccountActivity extends AppCompatActivity {
 
@@ -22,5 +25,8 @@ public class EnterInAccountActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ImageButton backButton = findViewById(R.id.backButton);
+        BackButton.init(backButton, WelcomeActivityBase.class, true);
     }
 }

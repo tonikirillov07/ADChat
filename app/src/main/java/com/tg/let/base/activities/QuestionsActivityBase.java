@@ -2,6 +2,7 @@ package com.tg.let.base.activities;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.tg.let.R;
 import com.tg.let.utils.AnotherActivity;
+import com.tg.let.utils.BackButton;
 
 public class QuestionsActivityBase extends AppCompatActivity {
 
@@ -24,8 +26,10 @@ public class QuestionsActivityBase extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
+        ImageButton buttonBack = findViewById(R.id.backButton);
         Button buttonNext = findViewById(R.id.buttonNext);
+
+        BackButton.init(buttonBack, WelcomeActivityBase.class, false);
         buttonNext.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, AccountActivityBase.class, false));
     }
 }
