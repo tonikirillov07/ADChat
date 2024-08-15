@@ -16,4 +16,57 @@
         <item name="fontFamily">@font/inter_bold</item>
         <item name="android:textStyle">italic</item>
     </style>
+    
+    <style name="context_labels_base">
+        <item name="elevation">20dp</item>
+        <item name="android:textColor">@color/context_labels</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="button_next_base" parent="buttons_base">
+        <item name="android:background">@drawable/button_next_background_base</item>
+        <item name="android:text">@string/next</item>
+    </style>
+
+    <style name="radio_buttons_base">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_marginStart">25dp</item>
+        <item name="layout_goneMarginTop">10dp</item>
+        <item name="android:buttonTint">@color/white</item>
+    </style>
+
+    <style name="tile_base">
+        <item name="android:layout_width">281dp</item>
+        <item name="android:layout_height">341dp</item>
+        <item name="android:layout_marginTop">176dp</item>
+        <item name="android:background">@drawable/tile_background_base</item>
+        <item name="android:elevation">20dp</item>
+    </style>
+    
+    <style name="edit_text_base">
+        <item name="android:fontFamily">@font/inter_light</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/edit_text_background_base</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="elevation">20dp</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="text_input_layout">
+        <item name="hintTextColor">@color/white</item>
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
 </resources>

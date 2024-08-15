@@ -11,4 +11,6 @@
     <color name="background_base_tile_color">#A12B2B2B</color>
     <color name="button_next_background_base">#A31F1F</color>
     <color name="have_account_textview">#041185</color>
+    <color name="context_labels">#D0CDCD</color>
+    <color name="edit_text_base">#737373</color>
 </resources>

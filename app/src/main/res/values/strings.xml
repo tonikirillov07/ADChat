@@ -12,4 +12,14 @@
     <string name="i_already_have_account">I already have account</string>
     <string name="english_is_one_of_most_popular_languages_in_the_world">English is one of most popular \nlanguages in the world</string>
     <string name="an_exception_has_occurred">An exception has occurred</string>
+    <string name="it_s_time_for_questions">It’s time \nfor questions</string>
+    <string name="why_do_you_want_to_learn_english">Why do you want \nto learn English?</string>
+    <string name="travels">Travels</string>
+    <string name="education">Education</string>
+    <string name="no_reason">No reason</string>
+    <string name="other">Other</string>
+    <string name="account">Account</string>
+    <string name="well_now_create_account_it_s_need_for_statistic_and_for_keep_your_progress_save">Well! Now create account. \nIt’s need for statistic and for\n keep your progress save</string>
+    <string name="write_email">Write Email</string>
+    <string name="write_your_current_password">Write Password</string>
 </resources>
