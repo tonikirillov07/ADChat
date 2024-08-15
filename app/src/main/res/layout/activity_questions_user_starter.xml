@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:background="@drawable/button_background_white"
-                android:text="@string/next"
+                android:text="@string/next_list"
                 android:textAllCaps="false"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -123,27 +123,25 @@
 
     <ImageButton
         android:id="@+id/buttonSettings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="299dp"
         android:layout_marginTop="11dp"
         android:layout_marginBottom="29dp"
         android:background="#00BD9B9B"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintStart_toEndOf="@+id/buttonBackStarter"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/settings"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/backButton"
+        android:id="@+id/buttonBackStarter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="299dp"
         android:layout_marginBottom="21dp"
         android:backgroundTint="#00D7C9C9"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSettings"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/button_back"
