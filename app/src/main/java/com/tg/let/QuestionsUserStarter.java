@@ -1,34 +1,24 @@
 package com.tg.let;
 
 import android.os.Bundle;
-import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.tg.let.utils.AnotherActivity;
+public class QuestionsUserStarter extends AppCompatActivity {
 
-public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_questions_user_starter);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        LinearLayout linearLayout = findViewById(R.id.linearLayout);
-        AppCompatButton buttonStarter = findViewById(R.id.buttonStarter);
-        AppCompatButton buttonBase = findViewById(R.id.buttonBase);
-
-        buttonBase.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, WelcomeActivityBase.class, false));
-        buttonStarter.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, QuestionsUserStarter.class, false));
     }
 }
