@@ -37,7 +37,7 @@ dependencies {
     implementation("com.google.firebase:firebase-bom:33.0.0")
     implementation("com.google.firebase:firebase-auth:23.0.0")
     implementation("com.pranavpandey.android:dynamic-toasts:2.1.1")
-    implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.17")
+    implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.22")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
