@@ -21,56 +21,68 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView4"
-            style="@style/titles_base"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:text="@string/welcome" />
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/inter_bold"
-            android:text="@string/we_re_let_we_ll_together_make_your_english_better_in_base_level"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="italic" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonNext"
-            style="@style/buttons_base"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/button_next_background_base"
-            android:text="@string/next" />
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/titles_base"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/welcome" />
 
-        <TextView
-            android:id="@+id/textView6"
-            style="@style/titles_base"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/or"
-            android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="@string/we_re_let_we_ll_together_make_your_english_better_in_base_level"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
 
-        <TextView
-            android:id="@+id/haveAccountTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_bold"
-            android:text="@string/i_already_have_account"
-            android:textAlignment="center"
-            android:textColor="@color/have_account_textview"
-            android:textSize="16sp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonNext"
+                    style="@style/buttons_base"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/button_next_background_base"
+                    android:text="@string/next" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/titles_base"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/or"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/haveAccountTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="@string/i_already_have_account"
+                    android:textAlignment="center"
+                    android:textColor="@color/have_account_textview"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
     </LinearLayout>
 
     <TextView
