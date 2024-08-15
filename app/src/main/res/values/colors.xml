@@ -14,4 +14,6 @@
     <color name="context_labels">#D0CDCD</color>
     <color name="edit_text_base">#737373</color>
     <color name="dialog_text">#ABABAB</color>
+    <color name="settings_starter">#662B2B2B</color>
+    <color name="settings_background_button">#B5737373</color>
 </resources>
