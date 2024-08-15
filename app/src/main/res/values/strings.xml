@@ -9,7 +9,7 @@
     <string name="we_re_let_we_ll_together_make_your_english_better_in_base_level">Мы - LET. \nМы вместе сделаем твой английский лучше на базовом уровне</string>
     <string name="next">Далее</string>
     <string name="or">Или</string>
-    <string name="i_already_have_account">У меня уже есть аккаунт</string>
+    <string name="i_already_have_account"><u>У меня уже есть аккаунт</u></string>
     <string name="an_exception_has_occurred">Возникло исключение</string>
     <string name="it_s_time_for_questions">Время \nдля вопросов</string>
     <string name="why_do_you_want_to_learn_english">Для чего вы хотите \nизучать английский?</string>

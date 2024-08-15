@@ -69,7 +69,8 @@
                     android:text="@string/i_already_have_account"
                     android:textAlignment="center"
                     android:textColor="@color/have_account_textview"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
             </LinearLayout>
         </ScrollView>
 
