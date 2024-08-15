@@ -1,5 +1,6 @@
 package com.tg.let.starter.activities;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.ImageButton;
 
@@ -25,7 +26,7 @@ public class QuestionsUserStarter extends AppCompatActivity {
             return insets;
         });
 
-        ImageButton backButton = findViewById(R.id.backButton);
+        ImageButton backButton = findViewById(R.id.buttonBackStarter);
         BackButton.init(backButton, MainActivity.class, true);
     }
 }

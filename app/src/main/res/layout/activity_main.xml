@@ -102,6 +102,7 @@
         android:layout_marginBottom="24dp"
         android:text="DeepApps"
         android:textAlignment="center"
+        android:textColor="#121111"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
