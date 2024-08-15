@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="13dp"
         android:fontFamily="@font/inter_light"
-        android:text="@string/english_is_one_of_most_popular_languages_in_the_world"
+        android:text="Tips"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16sp"
@@ -111,6 +111,16 @@
         android:fontFamily="@font/inter_medium"
         android:elevation="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/button_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
