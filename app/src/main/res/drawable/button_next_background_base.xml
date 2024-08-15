@@ -1,5 +1,6 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     <corners android:radius="13dp" />
-    <solid android:color="@color/background_starter_tile_color"/>
+    <solid android:color="@color/button_next_background_base"/>
+    <corners android:radius="13dp" />
 </shape>
