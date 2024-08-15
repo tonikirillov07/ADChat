@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ADChat"
         tools:targetApi="31">
         <activity
+            android:name=".base.activities.EnterInAccountActivity"
+            android:exported="false" />
+        <activity
             android:name=".base.activities.LookwoodHelloActivity"
             android:exported="false" />
         <activity

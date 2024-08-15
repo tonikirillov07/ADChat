@@ -6,17 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_base"
-    tools:context=".base.activities.AccountActivityBase">
-
-    <ImageView
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="9dp"
-        android:src="@drawable/button_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".base.activities.EnterInAccountActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -28,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/account" />
+        app:srcCompat="@drawable/account_2" />
 
     <TextView
         android:id="@+id/textView9"
@@ -46,14 +36,11 @@
 
     <LinearLayout
         style="@style/tile_base"
-        android:layout_height="389dp"
+        android:layout_height="325dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="157dp"
+        android:layout_marginTop="172dp"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="120dp"
-        android:background="@drawable/tile_background_base"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +53,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical" >
 
                 <TextView
                     android:id="@+id/textView4"
@@ -82,14 +69,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="@string/well_now_create_account_it_s_need_for_statistic_and_for_keep_your_progress_save" />
+                    android:text="@string/enter_in_account_context_text" />
 
                 <EditText
                     android:id="@+id/emailEditText"
                     style="@style/edit_text_base"
                     android:layout_width="match_parent"
                     android:layout_marginStart="25dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="25dp"
                     android:layout_marginEnd="25dp"
                     android:drawableEnd="@drawable/email"
                     android:ems="10"
@@ -114,15 +101,17 @@
                         android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <TextView
-                    android:id="@+id/generateStrongPasswordTextView"
-                    android:layout_width="match_parent"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/forgotPasswordButton"
+                    android:layout_width="219dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
+                    android:background="@color/transparent"
+                    android:drawableEnd="@drawable/sad_smile"
                     android:fontFamily="@font/inter_light"
-                    android:text="@string/help_me_to_generate_strong_password"
-                    android:textAlignment="center"
+                    android:text="@string/I_forgot_my_password"
+                    android:textAllCaps="false"
                     android:textColor="@color/generate_strong_password_text_view"
                     android:textSize="16sp"
                     android:textStyle="italic" />
@@ -134,19 +123,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="30dp"
-                    android:layout_marginEnd="25dp" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/buttonTryWithoutAccount"
-                    style="@style/buttons_base"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="30dp"
                     android:layout_marginEnd="25dp"
                     android:layout_marginBottom="25dp"
-                    android:background="@drawable/blue_button_background"
-                    android:text="@string/try_without_account" />
+                    android:background="@drawable/button_next_background_base" />
             </LinearLayout>
         </ScrollView>
 

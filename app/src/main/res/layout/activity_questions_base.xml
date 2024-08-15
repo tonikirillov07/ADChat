@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_main_base"
+    android:background="@drawable/background_base"
     tools:context=".base.activities.QuestionsActivityBase">
 
     <ImageView
@@ -33,8 +33,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-       style="@style/tile_base"
+        style="@style/tile_base"
+        android:layout_height="403dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="95dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -58,20 +63,20 @@
 
                 <TextView
                     android:id="@+id/textView7"
+                    style="@style/context_labels_base"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/context_labels_base"
                     android:layout_marginTop="25dp"
                     android:text="@string/why_do_you_want_to_learn_english" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent">
 
                     <RadioButton
+                        style="@style/radio_buttons_base"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="@style/radio_buttons_base"
                         android:text="@string/travels" />
 
                     <RadioButton
@@ -95,13 +100,13 @@
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/buttonNext"
+                    style="@style/button_next_base"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="25dp"
-                    style="@style/button_next_base"
-                    />
+                    android:layout_marginBottom="25dp" />
             </LinearLayout>
         </ScrollView>
 

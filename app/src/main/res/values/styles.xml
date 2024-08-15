@@ -42,9 +42,10 @@
     </style>
 
     <style name="tile_base">
-        <item name="android:layout_width">281dp</item>
-        <item name="android:layout_height">341dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
         <item name="android:layout_marginTop">176dp</item>
+        <item name="android:layout_marginBottom">176dp</item>
         <item name="android:background">@drawable/tile_background_base</item>
         <item name="android:elevation">20dp</item>
     </style>
