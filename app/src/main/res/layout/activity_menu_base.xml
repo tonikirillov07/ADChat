@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_base"
-    tools:context=".MenuBaseActivity">
+    tools:context=".base.activities.MenuBaseActivity">
 
     <ImageButton
         android:id="@+id/backButton"

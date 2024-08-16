@@ -6,16 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_base"
-    tools:context=".base.activities.initialSettings.WelcomeActivityBase">
+    tools:context=".base.activities.settings.OthersSettingsBaseActivity">
 
     <LinearLayout
         style="@style/tile_base"
-        android:layout_height="325dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="156dp"
+        android:layout_marginBottom="53dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -35,7 +36,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
-                    android:text="@string/welcome" />
+                    android:text="@string/others" />
 
                 <TextView
                     android:id="@+id/textView5"
@@ -43,80 +44,68 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="@string/we_re_let_we_ll_together_make_your_english_better_in_base_level" />
+                    android:text="@string/tiles_opacity_and_sounds" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/tilesOpacitySlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:valueFrom="30"
+                    android:valueTo="100"
+                    app:thumbColor="@color/white"
+                    app:trackColor="@color/slider"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginTop="20dp"
+                    app:trackHeight="8dp"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/buttonNext"
+                    android:id="@+id/resetButton"
                     style="@style/buttons_base"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="25dp"
-                    android:background="@drawable/button_next_background_base"
-                    android:text="@string/next" />
+                    android:layout_margin="25dp"
+                    android:background="@drawable/blue_button_background"
+                    android:text="@string/reset" />
 
-                <TextView
-                    android:id="@+id/textView6"
-                    style="@style/titles_base"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/or"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/haveAccountTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="25dp"
-                    android:fontFamily="@font/inter_bold"
-                    android:text="@string/i_already_have_account"
-                    android:textAlignment="center"
-                    android:textColor="@color/have_account_textview"
-                    android:textSize="16sp"
-                    android:textStyle="italic" />
             </LinearLayout>
         </ScrollView>
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="13dp"
-        android:fontFamily="@font/inter_light"
-        android:text="Tips"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="26dp"
+        android:layout_marginStart="189dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/usa_flag" />
+        app:srcCompat="@drawable/others_settings" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
-        android:text="@string/deepapps"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/inter_medium"
         android:elevation="20dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/deepapps"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -127,8 +116,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:layout_marginTop="9dp"
-        android:src="@drawable/button_back"
         android:background="@color/transparent"
+        android:src="@drawable/button_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

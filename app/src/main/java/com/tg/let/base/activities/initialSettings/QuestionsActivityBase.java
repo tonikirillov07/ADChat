@@ -1,4 +1,4 @@
-package com.tg.let.base.activities;
+package com.tg.let.base.activities.initialSettings;
 
 import android.os.Bundle;
 import android.widget.Button;
