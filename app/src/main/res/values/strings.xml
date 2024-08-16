@@ -37,4 +37,13 @@
     <string name="menu">Меню</string>
     <string name="select_category">Выберете категорию ниже</string>
     <string name="levels">Уровни</string>
+    <string name="settings">Настройки</string>
+    <string name="customize_app_for_yourself">Настройте приложение под себя</string>
+    <string name="reset_all">Сбросить все</string>
+    <string name="about">О программе</string>
+    <string name="info_about_app_and_premium">Информация о \n<b>приложении</b> и <b>Премиуме</b></string>
+    <string name="premium">Premium</string>
+    <string name="reset">Сбросить</string>
+    <string name="others">Другие</string>
+    <string name="tiles_opacity_and_sounds">Прозрачность плиток,\nи звуки</string>
 </resources>

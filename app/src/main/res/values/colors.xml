@@ -17,4 +17,6 @@
     <color name="generate_strong_password_text_view">#807DFF</color>
     <color name="try_without_account">#511FA3</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="gray">#B9B7B7</color>
+    <color name="slider">#3400CA</color>
 </resources>
