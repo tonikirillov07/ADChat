@@ -34,4 +34,7 @@
     <string name="try_without_account">Try without account</string>
     <string name="enter_in_account_context_text">Хорошо, тогда введите вашу почту и пароль ниже, чтобы <u>войти</u></string>
     <string name="I_forgot_my_password"><u>Я забыл свой пароль</u></string>
+    <string name="menu">Меню</string>
+    <string name="select_category">Выберете категорию ниже</string>
+    <string name="levels">Уровни</string>
 </resources>
