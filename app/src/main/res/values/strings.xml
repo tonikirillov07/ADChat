@@ -47,4 +47,8 @@
     <string name="reset">Сбросить</string>
     <string name="about">О программе</string>
     <string name="info_about_app_and_premium">Информация о Приложении\nи Премиуме</string>
+    <string name="premium">Премиум</string>
+    <string name="settings">Настройки</string>
+    <string name="customize_app_for_yourself">Настрой приложение под себя</string>
+    <string name="reset_all">Сбросить все</string>
 </resources>
