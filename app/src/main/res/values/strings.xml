@@ -39,4 +39,12 @@
     <string name="paid_content">Платный контент</string>
     <string name="restoring_life">Время восстановление жизни:</string>
     <string name="additional_settings">Дополнительные настройки</string>
+    <string name="try_without_account">Попробовать без аккаунта</string>
+    <string name="enter_in_account_context_text">Хорошо! Тогда введите вашу\nПочту и Пароль ниже</string>
+    <string name="I_forgot_my_password">Я забыл мой пароль</string>
+    <string name="others">Другое</string>
+    <string name="tiles_opacity_and_sounds">Прозрачность плиток \nи звуки\n</string>
+    <string name="reset">Сбросить</string>
+    <string name="about">О программе</string>
+    <string name="info_about_app_and_premium">Информация о Приложении\nи Премиуме</string>
 </resources>
