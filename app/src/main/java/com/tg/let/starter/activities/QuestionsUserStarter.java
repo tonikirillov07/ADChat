@@ -27,10 +27,10 @@ public class QuestionsUserStarter extends AppCompatActivity {
         });
 
         ImageButton backButton = findViewById(R.id.buttonBackStarter);
-        BackButton.init(backButton, MainActivity.class, true);
+        BackButton.init(backButton);
 
 
         ImageButton buttonSettings = findViewById(R.id.buttonSettings);
-        BackButton.init(buttonSettings, SettingsUsersStarter.class, true);
+        BackButton.init(buttonSettings);
     }
 }

@@ -27,6 +27,6 @@ public class SettingsUsersStarter extends AppCompatActivity {
         });
 
         ImageButton backButton = findViewById(R.id.buttonBackStarter);
-        BackButton.init(backButton, QuestionsUserStarter.class, true);
+        BackButton.init(backButton);
     }
 }

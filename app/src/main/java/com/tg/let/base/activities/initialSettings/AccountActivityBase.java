@@ -30,7 +30,7 @@ public class AccountActivityBase extends AppCompatActivity {
         Button buttonNext = findViewById(R.id.buttonNext);
         ImageButton buttonBack = findViewById(R.id.backButton);
 
-        BackButton.init(buttonBack, QuestionsActivityBase.class, false);
+        BackButton.init(buttonBack);
         buttonNext.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, LookwoodHelloActivity.class, false));
     }
 }

@@ -29,7 +29,7 @@ public class QuestionsActivityBase extends AppCompatActivity {
         ImageButton buttonBack = findViewById(R.id.backButton);
         Button buttonNext = findViewById(R.id.buttonNext);
 
-        BackButton.init(buttonBack, WelcomeActivityBase.class, false);
+        BackButton.init(buttonBack);
         buttonNext.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, AccountActivityBase.class, false));
     }
 }

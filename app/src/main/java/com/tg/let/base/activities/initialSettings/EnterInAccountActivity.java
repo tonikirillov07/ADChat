@@ -26,6 +26,6 @@ public class EnterInAccountActivity extends AppCompatActivity {
         });
 
         ImageButton backButton = findViewById(R.id.backButton);
-        BackButton.init(backButton, WelcomeActivityBase.class, true);
+        BackButton.init(backButton);
     }
 }
