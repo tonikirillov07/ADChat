@@ -30,5 +30,8 @@
     <string name="questionsUsers">С какой целью Вы изучаете английский?</string>
     <string name="help_me_to_generate_strong_password">Помогите мне создать\n надежный пароль</string>
     <string name="youre_done">Все готово!</string>
-    <string name="lockwood_welcome">“Меня зовут LockWood! \nЯ помогу тебе с твоим обучением по Английскому языку. \nНажмите кнопку "Далее", чтобы продолжить”</string>
+    <string name="lockwood_welcome">“Меня зовут <u><b>LockWood</b></u>! \nЯ помогу тебе с твоим обучением по Английскому языку. \nНажмите кнопку <b>Далее</b>, чтобы <u>продолжить</u>”</string>
+    <string name="try_without_account">Try without account</string>
+    <string name="enter_in_account_context_text">Хорошо, тогда введите вашу почту и пароль ниже, чтобы <u>войти</u></string>
+    <string name="I_forgot_my_password"><u>Я забыл свой пароль</u></string>
 </resources>
