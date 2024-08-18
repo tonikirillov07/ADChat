@@ -59,8 +59,13 @@
     <string name="change_password">Изменить <u>пароль</u></string>
     <string name="log_out">Выйти</string>
     <string name="delete_account">Удалить аккаунт</string>
-    <string name="email_changing">Смена почты</string>
+    <string name="email_changing">Смена Email</string>
     <string name="email">Новый Email</string>
     <string name="your_password">Ваш пароль</string>
-    <string name="enter_a_data_below_to_change_email">Введите необходимые данные ниже, чтобы сменить почту</string>
+    <string name="enter_a_data_below_to_change_email">Введите необходимые данные ниже, чтобы <b>сменить Email</b></string>
+    <string name="password_changing">Смена пароля</string>
+    <string name="enter_data_below_to_change_password">Введите необходимые данные ниже, чтобы <b>сменить пароль</b></string>
+    <string name="new_password">Новый пароль</string>
+    <string name="current_password">Текущий пароль</string>
+    <string name="what_if_i_lost_password"><u>Что, если \nпароль потерян?</u></string>
 </resources>
