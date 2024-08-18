@@ -13,13 +13,22 @@
         android:theme="@style/Theme.ADChat"
         tools:targetApi="31">
         <activity
+            android:name=".base.activities.initialSettings.accountSettings.EmailChangingBaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".base.activities.initialSettings.accountSettings.AccountSettingsBaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".base.activities.initialSettings.accountSettings.PasswordRestoringBaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".base.activities.LockWoodExplainActivity"
+            android:exported="false" />
+        <activity
             android:name=".base.activities.MenuBaseActivity"
             android:exported="false" />
         <activity
             android:name=".base.activities.initialSettings.EnterInAccountActivity"
-            android:exported="false" />
-        <activity
-            android:name=".base.activities.initialSettings.LookwoodHelloActivity"
             android:exported="false" />
         <activity
             android:name=".base.activities.initialSettings.AccountActivityBase"
