@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_base"
+    tools:context=".base.activities.initialSettings.accountSettings.AccountSettingsBaseActivity">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="9dp"
+        android:background="@color/transparent"
+        android:src="@drawable/button_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        style="@style/tile_base"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="207dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/titles_base"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/account" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/context_labels_base"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/account_info_subtext" />
+
+                <TextView
+                    android:id="@+id/userEmailTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="myemail@mail.ru"
+                    android:drawablePadding="15dp"
+                    android:textColor="@color/gray_2"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginTop="15dp"
+                    app:drawableStartCompat="@drawable/email" />
+
+                <TextView
+                    android:id="@+id/userDateOfRegistrationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="35dp"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="11/12/2024"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray_2"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:drawableStartCompat="@drawable/calendar" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/changeEmailButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    style="@style/buttons_base"
+                    android:background="@drawable/light_gray_button_background"
+                    android:textAlignment="textStart"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:elevation="25dp"
+                    android:drawableEnd="@drawable/arrow"
+                    android:text="@string/change_email" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/changePasswordButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    style="@style/buttons_base"
+                    android:background="@drawable/light_gray_button_background"
+                    android:textAlignment="textStart"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:elevation="25dp"
+                    android:drawableEnd="@drawable/arrow"
+                    android:text="@string/change_password" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/logOutButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/buttons_base"
+                    android:background="@drawable/dark_red_button_background"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="25dp"
+                    android:text="@string/log_out" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/deleteAccountButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/buttons_base"
+                    android:background="@drawable/red_button_background_base"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/delete_account" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="189dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/account_3" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/deepapps"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,7 @@
     </style>
 
     <style name="button_next_base" parent="buttons_base">
-        <item name="android:background">@drawable/button_next_background_base</item>
+        <item name="android:background">@drawable/red_button_background_base</item>
         <item name="android:text">@string/next</item>
     </style>
 

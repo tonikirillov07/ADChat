@@ -6,24 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_base"
-    tools:context=".base.activities.initialSettings.LookwoodHelloActivity">
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:elevation="20dp"
-        android:fontFamily="@font/inter_medium"
-        android:text="@string/deepapps"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".base.activities.LockWoodExplainActivity">
 
     <LinearLayout
         style="@style/tile_base"
+        android:layout_width="0dp"
         android:layout_height="397dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="124dp"
@@ -68,7 +55,7 @@
                     app:srcCompat="@drawable/lockwood" />
 
                 <TextView
-                    android:id="@+id/textView11"
+                    android:id="@+id/lockwoodTextTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_light"
@@ -79,7 +66,7 @@
                     android:textStyle="italic" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button"
+                    android:id="@+id/nextButton"
                     style="@style/button_next_base"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
