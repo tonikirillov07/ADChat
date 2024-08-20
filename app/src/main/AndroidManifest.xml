@@ -49,6 +49,18 @@
             android:name=".starter.activities.SettingsUsersStarter"
             android:exported="false" />
         <activity
+            android:name=".starter.activities.ChangeLanguage"
+            android:exported="false" />
+        <activity
+            android:name=".starter.activities.AdditionalSettings"
+            android:exported="false" />
+        <activity
+            android:name=".starter.activities.PaidContent"
+            android:exported="false" />
+        <activity
+            android:name=".starter.activities.Topic"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
