@@ -30,7 +30,6 @@ public class QuestionsUserStarter extends AppCompatActivity {
         ImageButton backButton = findViewById(R.id.buttonBackStarter);
         BackButton.init(backButton);
 
-
         ImageButton buttonSettings = findViewById(R.id.buttonSettings);
         buttonSettings.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this,SettingsUsersStarter.class, false));
     }

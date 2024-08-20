@@ -13,6 +13,18 @@
         android:theme="@style/Theme.ADChat"
         tools:targetApi="31">
         <activity
+            android:name=".AdditionalSettings"
+            android:exported="false" />
+        <activity
+            android:name=".starter.activities.PaidContent"
+            android:exported="false" />
+        <activity
+            android:name=".starter.activities.Topic"
+            android:exported="false" />
+        <activity
+            android:name=".starter.activities.ChangeLanguage"
+            android:exported="false" />
+        <activity
             android:name=".base.activities.MenuBaseActivity"
             android:exported="false" />
         <activity
