@@ -10,8 +10,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.tg.let.AdditionalSettings;
-import com.tg.let.MainActivity;
 import com.tg.let.R;
 import com.tg.let.utils.AnotherActivity;
 import com.tg.let.utils.BackButton;

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_main_starter"
-    tools:context=".AdditionalSettings">
+    tools:context=".starter.activities.AdditionalSettings">
 
     <TextView
         android:id="@+id/textView3"
