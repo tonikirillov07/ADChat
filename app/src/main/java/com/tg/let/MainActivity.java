@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.tg.let.base.activities.initialSettings.WelcomeActivityBase;
 import com.tg.let.starter.activities.QuestionsUserStarter;
 import com.tg.let.utils.AnotherActivity;
+import com.tg.let.utils.Toasts;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout linearLayout = findViewById(R.id.linearLayout);
         AppCompatButton buttonStarter = findViewById(R.id.buttonStarter);
         AppCompatButton buttonBase = findViewById(R.id.buttonBase);
+
+        Toasts.applyToastConfigs(this);
 
         buttonBase.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, WelcomeActivityBase.class, false));
         buttonStarter.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, QuestionsUserStarter.class, false));

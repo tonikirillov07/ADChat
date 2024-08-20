@@ -68,4 +68,9 @@
     <string name="new_password">Новый пароль</string>
     <string name="current_password">Текущий пароль</string>
     <string name="what_if_i_lost_password"><u>Что, если \nпароль потерян?</u></string>
+    <string name="please_select_something">Пожалуйста, выберете что-то из списка</string>
+    <string name="fill_this_field">Заполните это поле</string>
+    <string name="ok">OK</string>
+    <string name="no">Отмена</string>
+    <string name="hello">Привет</string>
 </resources>
