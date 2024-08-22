@@ -46,21 +46,41 @@
                     android:layout_marginTop="20dp"
                     android:text="@string/tiles_opacity_and_sounds" />
 
-                <com.google.android.material.slider.Slider
-                    android:id="@+id/tilesOpacitySlider"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:valueFrom="30"
-                    android:valueTo="100"
-                    app:thumbColor="@color/white"
-                    app:trackColor="@color/slider"
-                    android:layout_marginStart="35dp"
-                    android:layout_marginEnd="35dp"
-                    android:layout_marginTop="20dp"
-                    app:trackHeight="8dp"
-                    />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginEnd="35dp"
+                        android:fontFamily="@font/inter_light"
+                        android:textSize="16sp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@color/gray_3"
+                        android:textStyle="italic"
+                        android:text="@string/tiles_opacity" />
+
+                    <com.google.android.material.slider.Slider
+                        android:id="@+id/tilesOpacitySlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:valueFrom="30"
+                        android:valueTo="100"
+                        app:thumbColor="@color/white"
+                        app:trackColor="@color/slider"
+                        app:trackHeight="8dp" />
+                </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerView"

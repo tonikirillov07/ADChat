@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_base"
-    tools:context=".base.activities.initialSettings.accountSettings.AccountSettingsBaseActivity">
+    tools:context=".base.activities.settings.accountSettings.AccountSettingsBaseActivity">
 
     <ImageButton
         android:id="@+id/backButton"

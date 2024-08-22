@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.tg.let.R;
-import com.tg.let.base.activities.initialSettings.accountSettings.PasswordRestoringBaseActivity;
+import com.tg.let.base.activities.settings.accountSettings.PasswordRestoringBaseActivity;
 import com.tg.let.utils.AnotherActivity;
 import com.tg.let.utils.BackButton;
 import com.tg.let.utils.EditTextUtils;

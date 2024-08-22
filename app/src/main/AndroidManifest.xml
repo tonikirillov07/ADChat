@@ -13,16 +13,16 @@
         android:theme="@style/Theme.ADChat"
         tools:targetApi="31">
         <activity
-            android:name=".base.activities.initialSettings.accountSettings.PasswordChangingBaseActivity"
+            android:name=".base.activities.settings.accountSettings.PasswordChangingBaseActivity"
             android:exported="false" />
         <activity
-            android:name=".base.activities.initialSettings.accountSettings.EmailChangingBaseActivity"
+            android:name=".base.activities.settings.accountSettings.EmailChangingBaseActivity"
             android:exported="false" />
         <activity
-            android:name=".base.activities.initialSettings.accountSettings.AccountSettingsBaseActivity"
+            android:name=".base.activities.settings.accountSettings.AccountSettingsBaseActivity"
             android:exported="false" />
         <activity
-            android:name=".base.activities.initialSettings.accountSettings.PasswordRestoringBaseActivity"
+            android:name=".base.activities.settings.accountSettings.PasswordRestoringBaseActivity"
             android:exported="false" />
         <activity
             android:name=".base.activities.LockWoodExplainActivity"
@@ -47,6 +47,12 @@
             android:exported="false" />
         <activity
             android:name=".base.activities.settings.SettingsMenuBaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".base.activities.settings.OthersSettingsBaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".base.activities.settings.SettingsBaseAboutActivity"
             android:exported="false" />
         <activity
             android:name=".starter.activities.SettingsUsersStarter"

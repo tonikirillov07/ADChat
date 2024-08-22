@@ -94,4 +94,8 @@
     <string name="password_must_contains_upper_cases">Пароль должен содержать заглавные буквы</string>
     <string name="password_must_contains_digits">Пароль должен содержать цифры</string>
     <string name="youre_enter">Поздравляю, Вы вошли в свой аккаунт. \nНажмите кнопку <b>Далее</b>, чтобы продолжить</string>
+    <string name="on">Вкл.</string>
+    <string name="off">Выкл.</string>
+    <string name="tiles_opacity">Прозрачность плиток</string>
+
 </resources>

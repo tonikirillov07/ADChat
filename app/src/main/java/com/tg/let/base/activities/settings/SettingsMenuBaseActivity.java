@@ -12,8 +12,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.tg.let.R;
+import com.tg.let.base.activities.settings.accountSettings.AccountSettingsBaseActivity;
 import com.tg.let.base.recyclerViewAdapters.mainMenu.MainMenuAdapter;
 import com.tg.let.base.recyclerViewAdapters.mainMenu.MainMenuItemInfo;
+import com.tg.let.utils.AnotherActivity;
 import com.tg.let.utils.BackButton;
 
 import java.util.ArrayList;
@@ -42,11 +44,15 @@ public class SettingsMenuBaseActivity extends AppCompatActivity {
 
     private void initRecyclerView() {
         List<MainMenuItemInfo> mainMenuItemInfoList = new ArrayList<>();
-        mainMenuItemInfoList.add(new MainMenuItemInfo(getString(R.string.account), R.drawable.account_3, R.drawable.light_gray_button_background, R.color.white, null));
-        mainMenuItemInfoList.add(new MainMenuItemInfo(getString(R.string.others), R.drawable.others_settings, R.drawable.light_gray_button_background, R.color.white, null));
-        mainMenuItemInfoList.add(new MainMenuItemInfo(getString(R.string.about), R.drawable.about, R.drawable.light_gray_button_background, R.color.white, null));
+        mainMenuItemInfoList.add(new MainMenuItemInfo(getString(R.string.account), R.drawable.account_3, R.drawable.light_gray_button_background, R.color.white, () -> openSettingsSection(AccountSettingsBaseActivity.class)));
+        mainMenuItemInfoList.add(new MainMenuItemInfo(getString(R.string.others), R.drawable.others_settings, R.drawable.light_gray_button_background, R.color.white, () -> openSettingsSection(OthersSettingsBaseActivity.class)));
+        mainMenuItemInfoList.add(new MainMenuItemInfo(getString(R.string.about), R.drawable.about, R.drawable.light_gray_button_background, R.color.white, () -> openSettingsSection(SettingsBaseAboutActivity.class)));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new MainMenuAdapter(mainMenuItemInfoList, this));
+    }
+
+    private void openSettingsSection(Class activityClass){
+        AnotherActivity.gotoAnotherActivity(this, activityClass, false);
     }
 }
