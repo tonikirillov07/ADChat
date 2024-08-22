@@ -46,6 +46,9 @@
             android:name=".base.activities.initialSettings.WelcomeActivityBase"
             android:exported="false" />
         <activity
+            android:name=".base.activities.settings.SettingsMenuBaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".starter.activities.SettingsUsersStarter"
             android:exported="false" />
         <activity

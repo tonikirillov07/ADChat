@@ -2,6 +2,7 @@ package com.tg.let.base.activities.initialSettings;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -12,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.tg.let.R;
 import com.tg.let.utils.AnotherActivity;
+import com.tg.let.utils.BackButton;
 
 public class WelcomeActivityBase extends AppCompatActivity {
 
@@ -27,6 +29,9 @@ public class WelcomeActivityBase extends AppCompatActivity {
         });
 
         Button buttonNext = findViewById(R.id.buttonNext);
+        ImageButton buttonBack = findViewById(R.id.backButton);
+
+        BackButton.init(buttonBack);
         buttonNext.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, QuestionsActivityBase.class, false));
 
         TextView haveAccountTextView = findViewById(R.id.haveAccountTextView);

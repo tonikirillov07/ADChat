@@ -13,8 +13,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.tg.let.R;
+import com.tg.let.base.utils.AppCompatActivityParcelable;
 import com.tg.let.base.utils.LockWoodInfoActivityController;
+import com.tg.let.utils.AnotherActivity;
 import com.tg.let.utils.Utils;
+import com.tg.let.utils.animations.TypeWriter;
 
 public class LockWoodExplainActivity extends AppCompatActivity {
     private TextView titleTextView, subTextTextView, lockwoodTextTextView;
@@ -39,11 +42,28 @@ public class LockWoodExplainActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         setTexts(intent);
-        initActionOnNextButton();
+        initActionOnNextButton(intent);
+
+        animateText();
     }
 
-    private void initActionOnNextButton() {
-        nextButton.setOnClickListener(v -> finish());
+    private void animateText() {
+        TypeWriter typeWriter = new TypeWriter(lockwoodTextTextView, lockwoodTextTextView.getText().toString(), 25);
+        typeWriter.animate();
+    }
+
+    private void initActionOnNextButton(@NonNull Intent intent) {
+        AppCompatActivityParcelable activityParcelable = intent.getParcelableExtra(LockWoodInfoActivityController.LOCKWOOD_ACTIVITY_DIRECT_ACTIVITY_EXTRA);
+
+        if(activityParcelable == null)
+            return;
+
+        nextButton.setOnClickListener(v -> {
+            if(intent.getBooleanExtra(LockWoodInfoActivityController.LOCKWOOD_ACTIVITY_CLOSE_ALL_PREVIOUS_ACTIVITIES_WHEN_REDIRECTING_EXTRA, false))
+                AnotherActivity.gotoAnotherActivityWithClosingAllPrevious(this, activityParcelable.getActivityData());
+            else
+                AnotherActivity.gotoAnotherActivity(this, activityParcelable.getActivityData(), false);
+        });
     }
 
     private void setTexts(@NonNull Intent intent) {

@@ -30,7 +30,7 @@
     <string name="questionsUsers">С какой целью Вы изучаете английский?</string>
     <string name="help_me_to_generate_strong_password">Помогите мне создать\n надежный пароль</string>
     <string name="youre_done">Все готово!</string>
-    <string name="lockwood_welcome">“Меня зовут LockWood! \nЯ помогу тебе с твоим обучением по Английскому языку. \nНажмите кнопку "Далее", чтобы продолжить”</string>
+    <string name="lockwood_welcome">Меня зовут LockWood! \nЯ помогу тебе с твоим обучением по Английскому языку. \nНажмите кнопку "Далее", чтобы продолжить</string>
     <string name="menu">Меню</string>
     <string name="select_category">Выберете категорию ниже</string>
     <string name="levels">Уровни</string>
@@ -88,4 +88,10 @@
     <string name="notifications">Уведомления</string>
     <string name="shadows">Тени</string>
     <string name="reset_settings">Сброс настроек</string>
+    <string name="password_must_have_a_length_at_least">Пароль должен не короче</string>
+    <string name="symbols">символов</string>
+    <string name="password_must_contains_lower_cases">Пароль должен содержать строчные буквы</string>
+    <string name="password_must_contains_upper_cases">Пароль должен содержать заглавные буквы</string>
+    <string name="password_must_contains_digits">Пароль должен содержать цифры</string>
+    <string name="youre_enter">Поздравляю, Вы вошли в свой аккаунт. \nНажмите кнопку <b>Далее</b>, чтобы продолжить</string>
 </resources>

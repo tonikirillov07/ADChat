@@ -7,6 +7,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -14,13 +15,20 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.tg.let.R;
+import com.tg.let.base.activities.MenuBaseActivity;
+import com.tg.let.base.utils.AppCompatActivityParcelable;
 import com.tg.let.base.utils.LockWoodInfoActivityController;
+import com.tg.let.base.utils.PasswordWeaknessReasonsDisplayer;
 import com.tg.let.utils.BackButton;
 import com.tg.let.utils.EditTextUtils;
+import com.tg.let.utils.Toasts;
 import com.tg.let.utils.password.PasswordGenerator;
+import com.tg.let.utils.password.PasswordStrengthLevels;
+import com.tg.let.utils.password.PasswordValidator;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Objects;
-import java.util.Random;
 
 public class AccountActivityBase extends AppCompatActivity {
     private EditText emailEditText;
@@ -54,9 +62,13 @@ public class AccountActivityBase extends AppCompatActivity {
     }
 
     private void onNextButtonAction(){
-        if(!EditTextUtils.getEmptyFieldsFromArray(new EditText[]{emailEditText}, new TextInputLayout[]{passwordEditText}, this).isEmpty())
+        if(EditTextUtils.hasEmptyFieldsInArrays(new EditText[]{emailEditText}, new TextInputLayout[]{passwordEditText}, this))
             return;
 
-        LockWoodInfoActivityController.openActivity(getString(R.string.youre_done), getString(R.string.hello) + ", ", getString(R.string.lockwood_welcome), this);
+        if(PasswordWeaknessReasonsDisplayer.checkIsPasswordWeakAndDisplayInfoToast(this, EditTextUtils.getTextFromEditText(Objects.requireNonNull(passwordEditText.getEditText()))))
+            return;
+
+        LockWoodInfoActivityController.openActivity(getString(R.string.youre_done), getString(R.string.hello) + ", " + EditTextUtils.getTextFromEditText(emailEditText), getString(R.string.lockwood_welcome), this, true,
+                new AppCompatActivityParcelable(MenuBaseActivity.class), true);
     }
 }

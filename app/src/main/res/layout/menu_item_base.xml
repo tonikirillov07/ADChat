@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/itemButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/levels"
         style="@style/buttons_base"
         android:textColor="@color/black"
-        android:background="@drawable/button_background_white"
+        android:background="@drawable/blue_button_background"
         android:drawableEnd="@drawable/levels"
         android:paddingStart="25dp"
         android:paddingEnd="15dp"

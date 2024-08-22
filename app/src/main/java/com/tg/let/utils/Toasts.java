@@ -26,11 +26,16 @@ public final class Toasts {
 
     public static void showToast(Context context, String text, int backgroundColor, int icon){
         Toast dynamicToast = DynamicToast.make(context, text, ContextCompat.getDrawable(context, icon),
-                context.getColor(R.color.white), context.getResources().getColor(backgroundColor, context.getTheme()), LENGTH_LONG);
+                context.getColor(R.color.white), context.getResources().getColor(backgroundColor, context.getTheme()));
 
+        dynamicToast.setDuration(LENGTH_LONG);
         dynamicToast.setGravity(Gravity.TOP, 0, 0);
         dynamicToast.show();
 
         Log.i(LOGGER_TAG, "Created and shown toast with text '" + text + "', background color: " + backgroundColor + ", icon: " + icon);
+    }
+
+    public static void showErrorToast(Context context, String errorText){
+        Toasts.showToast(context, errorText, R.color.button_next_background_base, R.drawable.warning);
     }
 }

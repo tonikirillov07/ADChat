@@ -2,7 +2,6 @@ package com.tg.let.utils;
 
 import android.content.Context;
 import android.util.Log;
-import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 
 import androidx.annotation.NonNull;
@@ -10,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.tg.let.R;
-import com.tg.let.utils.actionEvents.IOnAction;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -43,10 +41,10 @@ public final class EditTextUtils {
     }
 
     @NonNull
-    public static List<EditText> getEmptyFieldsFromArray(EditText[] editTexts, TextInputLayout[] textInputLayouts, AppCompatActivity activity){
+    public static boolean hasEmptyFieldsInArrays(EditText[] editTexts, TextInputLayout[] textInputLayouts, AppCompatActivity activity){
         Log.i(LOGGER_TAG, "Searching empty field from " +  Arrays.toString(editTexts) + " and " +  Arrays.toString(textInputLayouts) + " starting...");
 
-        List<EditText> emptyEditTexts = new ArrayList<>();
+        boolean hasEmptyFields = false;
 
         if(editTexts != null) {
             for (EditText editText : editTexts) {
@@ -54,7 +52,7 @@ public final class EditTextUtils {
 
                 if (getTextFromEditText(editText).isEmpty()) {
                     setFieldEmptyError(editText, activity);
-                    emptyEditTexts.add(editText);
+                    hasEmptyFields = true;
                 }
             }
         }
@@ -65,13 +63,13 @@ public final class EditTextUtils {
 
                 if (getTextFromEditText(Objects.requireNonNull(inputLayout.getEditText())).isEmpty()) {
                     setTextInputLayoutError(inputLayout.getContext().getString(R.string.fill_this_field), inputLayout, activity);
-                    emptyEditTexts.add(inputLayout.getEditText());
+                    hasEmptyFields = true;
                 }
             }
         }
 
-        Log.i(LOGGER_TAG, "Found empty fields: " + emptyEditTexts.size());
+        Log.i(LOGGER_TAG, "Found empty fields: " + hasEmptyFields);
 
-        return emptyEditTexts;
+        return hasEmptyFields;
     }
 }

@@ -25,4 +25,15 @@ public final class AnotherActivity {
         }
     }
 
+    public static void gotoAnotherActivityWithClosingAllPrevious(AppCompatActivity context, Class activityClass){
+        try {
+            Intent intent = new Intent(context, activityClass);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+
+            Log.i(LOGGER_TAG, context.getLocalClassName() + " redirected to activity " + activityClass + " with clear activities stack");
+        }catch (Exception e){
+            ErrorDialog.showDialog(context, e, true);
+        }
+    }
 }

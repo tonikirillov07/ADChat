@@ -44,7 +44,7 @@ public class QuestionsActivityBase extends AppCompatActivity {
             int selectedRadioButton = radioGroup.getCheckedRadioButtonId();
 
             if (selectedRadioButton == RadioGroup.NO_ID)
-                Toasts.showToast(this, getString(R.string.please_select_something), R.color.button_next_background_base, R.drawable.warning);
+                Toasts.showErrorToast(this, getString(R.string.please_select_something));
             else
                 AnotherActivity.gotoAnotherActivity(this, AccountActivityBase.class, false);
         }catch (Exception e){
