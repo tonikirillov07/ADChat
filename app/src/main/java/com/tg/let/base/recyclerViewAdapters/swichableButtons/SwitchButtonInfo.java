@@ -1,16 +1,22 @@
 package com.tg.let.base.recyclerViewAdapters.swichableButtons;
 
+import androidx.annotation.NonNull;
+
+import com.tg.let.utils.actionEvents.IOnSwitchButtonChanging;
+
 import java.util.List;
 
 public class SwitchButtonInfo {
     private String buttonName;
     private int state;
-    private List<String> statesList;
+    private final IOnSwitchButtonChanging onSwitchButtonChanging;
+    private List<SwitchButtonState> statesList;
 
-    public SwitchButtonInfo(String buttonName, int state, List<String> statesList) {
+    public SwitchButtonInfo(String buttonName, int state, List<SwitchButtonState> statesList, IOnSwitchButtonChanging onSwitchButtonChanging) {
         this.buttonName = buttonName;
         this.state = state;
         this.statesList = statesList;
+        this.onSwitchButtonChanging = onSwitchButtonChanging;
     }
 
     public void switchToNextState(){
@@ -22,6 +28,16 @@ public class SwitchButtonInfo {
             currentState = 0;
 
         state = currentState;
+        onSwitchButtonChanging.onChanging(state, statesList.get(state));
+    }
+
+    public void updateSwitchButton(SwitchButtonAdapter switchButtonAdapter, @NonNull List<SwitchButtonInfo> switchButtonInfos){
+        int position = switchButtonInfos.indexOf(this);
+
+        if(position < 0)
+            return;
+
+        switchButtonAdapter.notifyItemChanged(position);
     }
 
     public String getButtonName() {
@@ -40,11 +56,21 @@ public class SwitchButtonInfo {
         this.state = state;
     }
 
-    public List<String> getStatesList() {
+    public List<SwitchButtonState> getStatesList() {
         return statesList;
     }
 
-    public void setStatesList(List<String> statesList) {
+    public void setStatesList(List<SwitchButtonState> statesList) {
         this.statesList = statesList;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "SwitchButtonInfo{" +
+                "buttonName='" + buttonName + '\'' +
+                ", state=" + state +
+                ", statesList=" + statesList +
+                '}';
     }
 }

@@ -24,7 +24,7 @@ public class SwitchButtonAdapter extends RecyclerView.Adapter<SwitchButtonViewHo
     @NonNull
     @Override
     public SwitchButtonViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new SwitchButtonViewHolder(LayoutInflater.from(context).inflate(R.layout.swichable_button_item_base, parent, false));
+        return new SwitchButtonViewHolder(LayoutInflater.from(context).inflate(R.layout.swichable_button_item_base, parent, false), switchButtonInfos, this);
     }
 
     @Override
@@ -41,6 +41,11 @@ public class SwitchButtonAdapter extends RecyclerView.Adapter<SwitchButtonViewHo
     }
 
     private void changeState(@NonNull TextView stateTextView, int position, int state){
-        stateTextView.setText(switchButtonInfos.get(position).getStatesList().get(state));
+        SwitchButtonState switchButtonState = switchButtonInfos.get(position).getStatesList().get(state);
+
+        stateTextView.setText(switchButtonState.getStateText());
+        stateTextView.setTextColor(switchButtonState.getStateColor());
+
+
     }
 }
