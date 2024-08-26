@@ -1,6 +1,7 @@
 package com.tg.let.base.activities;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import com.tg.let.R;
 import com.tg.let.base.activities.settings.SettingsMenuBaseActivity;
 import com.tg.let.base.recyclerViewAdapters.mainMenu.MainMenuAdapter;
 import com.tg.let.base.recyclerViewAdapters.mainMenu.MainMenuItemInfo;
+import com.tg.let.base.utils.LockWoodInfoActivityController;
 import com.tg.let.utils.AnotherActivity;
 
 import java.util.ArrayList;
@@ -34,13 +36,20 @@ public class MenuBaseActivity extends AppCompatActivity {
         });
 
         recyclerView = findViewById(R.id.recyclerView);
+        Button healthButton = findViewById(R.id.healthButton);
 
+        healthButton.setOnClickListener(v -> openHealthInfo());
         initRecyclerView();
+    }
+
+    private void openHealthInfo() {
+        LockWoodInfoActivityController.openActivity(getString(R.string.your_lifes), getString(R.string.lifes_info), getString(R.string.lockwood_lifes_info_text), this,
+                false, null, false);
     }
 
     private void initRecyclerView() {
         List<MainMenuItemInfo> mainMenuItemInfoList = new ArrayList<>();
-        mainMenuItemInfoList.add(new MainMenuItemInfo(getString(R.string.levels), R.drawable.levels, R.drawable.button_background_white, R.color.black, null));
+        mainMenuItemInfoList.add(new MainMenuItemInfo(getString(R.string.levels), R.drawable.levels, R.drawable.button_background_white, R.color.black, () -> AnotherActivity.gotoAnotherActivity(this, LessonsHubMainActivity.class, false)));
         mainMenuItemInfoList.add(new MainMenuItemInfo(getString(R.string.settings), R.drawable.settings_base, R.drawable.button_background_white, R.color.black, () -> AnotherActivity.gotoAnotherActivity(this, SettingsMenuBaseActivity.class, false)));
 
         MainMenuAdapter mainMenuAdapter = new MainMenuAdapter(mainMenuItemInfoList, this);

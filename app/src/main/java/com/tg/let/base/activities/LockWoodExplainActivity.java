@@ -55,10 +55,12 @@ public class LockWoodExplainActivity extends AppCompatActivity {
     private void initActionOnNextButton(@NonNull Intent intent) {
         AppCompatActivityParcelable activityParcelable = intent.getParcelableExtra(LockWoodInfoActivityController.LOCKWOOD_ACTIVITY_DIRECT_ACTIVITY_EXTRA);
 
-        if(activityParcelable == null)
-            return;
-
         nextButton.setOnClickListener(v -> {
+            if(activityParcelable == null){
+                finish();
+                return;
+            }
+
             if(intent.getBooleanExtra(LockWoodInfoActivityController.LOCKWOOD_ACTIVITY_CLOSE_ALL_PREVIOUS_ACTIVITIES_WHEN_REDIRECTING_EXTRA, false))
                 AnotherActivity.gotoAnotherActivityWithClosingAllPrevious(this, activityParcelable.getActivityData());
             else

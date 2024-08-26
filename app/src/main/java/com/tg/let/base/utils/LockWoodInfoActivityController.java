@@ -20,8 +20,10 @@ public final class LockWoodInfoActivityController {
         intent.putExtra(LOCKWOOD_ACTIVITY_TITLE_EXTRA, title);
         intent.putExtra(LOCKWOOD_ACTIVITY_SUBTEXT_EXTRA, subText);
         intent.putExtra(LOCKWOOD_ACTIVITY_MAIN_TEXT_EXTRA, mainText);
-        intent.putExtra(LOCKWOOD_ACTIVITY_DIRECT_ACTIVITY_EXTRA, activityParcelable);
         intent.putExtra(LOCKWOOD_ACTIVITY_CLOSE_ALL_PREVIOUS_ACTIVITIES_WHEN_REDIRECTING_EXTRA, closeAnotherActivitiesWhenRedirecting);
+
+        if(activityParcelable != null)
+            intent.putExtra(LOCKWOOD_ACTIVITY_DIRECT_ACTIVITY_EXTRA, activityParcelable);
 
         if(closeAllPreviousActivities)
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);

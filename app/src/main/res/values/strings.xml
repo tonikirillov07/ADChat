@@ -102,4 +102,8 @@
     <string name="version">Версия: </string>
     <string name="sdk_version">Версия SDK: </string>
     <string name="developer">Разработчик: </string>
+    <string name="your_lifes">Ваши жизни</string>
+    <string name="lifes_info">Информация <u>о жизнях</u></string>
+    <string name="lockwood_lifes_info_text">Следите за вашими жизнями, как только они достигнут <b>0%</b>, \nвам будет <u>ограничен</u> доступ к новым урокам <u>в течение 25 минут</u>.\n Здоровье уменьшается за каждое неправильно выполненное задание</string>
+    <string name="lets_study_starts">Давайте \nначнем обучение</string>
 </resources>
