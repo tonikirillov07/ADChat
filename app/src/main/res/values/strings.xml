@@ -58,6 +58,7 @@
     <string name="account_info_subtext">Информация о профиле, \nсмена почты и пароля и др…</string>
     <string name="change_email">Изменить <u>почту</u></string>
     <string name="change_password">Изменить <u>пароль</u></string>
+
     <string name="log_out">Выйти</string>
     <string name="delete_account">Удалить аккаунт</string>
     <string name="email_changing">Смена Email</string>

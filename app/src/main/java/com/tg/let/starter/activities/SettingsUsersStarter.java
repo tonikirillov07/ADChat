@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.tg.let.R;
+import com.tg.let.starter.activities.utils.starter.ClickReactionAccount;
 import com.tg.let.utils.AnotherActivity;
 import com.tg.let.utils.BackButton;
 
@@ -41,6 +42,8 @@ public class SettingsUsersStarter extends AppCompatActivity {
 
         AppCompatButton buttonAdditionalSettings = findViewById(R.id.buttonAdditionalSettings);
         buttonAdditionalSettings.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, AdditionalSettings.class, false));
+
+        ClickReactionAccount.loginAccount(this);
 
     }
 }
