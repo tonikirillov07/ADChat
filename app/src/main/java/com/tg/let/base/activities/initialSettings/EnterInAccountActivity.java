@@ -13,7 +13,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.tg.let.R;
+import com.tg.let.base.activities.MenuBaseActivity;
 import com.tg.let.base.activities.settings.accountSettings.PasswordRestoringBaseActivity;
+import com.tg.let.base.utils.AppCompatActivityParcelable;
+import com.tg.let.base.utils.LockWoodInfoActivityController;
 import com.tg.let.utils.AnotherActivity;
 import com.tg.let.utils.BackButton;
 import com.tg.let.utils.EditTextUtils;
@@ -48,6 +51,8 @@ public class EnterInAccountActivity extends AppCompatActivity {
         if(EditTextUtils.hasEmptyFieldsInArrays(new EditText[]{emailEditText}, new TextInputLayout[]{passwordEditText}, this))
             return;
 
-
+        AppCompatActivityParcelable activityParcelable = new AppCompatActivityParcelable(MenuBaseActivity.class);
+        LockWoodInfoActivityController.openActivity(getString(R.string.welcome_back), getString(R.string.welcome_back_user) + EditTextUtils.getTextFromEditText(emailEditText),
+                getString(R.string.glad_to_see_you_again), this, true, activityParcelable, true);
     }
 }

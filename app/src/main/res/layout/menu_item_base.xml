@@ -15,6 +15,7 @@
         android:background="@drawable/blue_button_background"
         android:drawableEnd="@drawable/levels"
         android:paddingStart="25dp"
+        android:drawablePadding="8dp"
         android:paddingEnd="15dp"
         android:textAlignment="textStart"
         app:layout_constraintStart_toStartOf="parent"
