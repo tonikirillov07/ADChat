@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ADChat"
         tools:targetApi="31">
         <activity
+            android:name=".starter.activities.LoginAccountStarter"
+            android:exported="false" />
+        <activity
             android:name=".base.activities.initialSettings.accountSettings.PasswordChangingBaseActivity"
             android:exported="false" />
         <activity
