@@ -29,10 +29,9 @@ public class LessonsHubMainActivity extends AppCompatActivity {
             return insets;
         });
 
-        ImageButton backButton = findViewById(R.id.backButton);
         englishFactTextView = findViewById(R.id.factTextView);
 
-        BackButton.init(backButton);
+        BackButton.init(this);
     }
 
     @Override

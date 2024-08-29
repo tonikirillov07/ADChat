@@ -26,9 +26,7 @@ public class AdditionalSettings extends AppCompatActivity {
             return insets;
         });
 
-        ImageButton backButton = findViewById(R.id.buttonBackStarter);
-        BackButton.init(backButton);
-
+        BackButton.init(this);
         ClickReactionAccount.loginAccount(this);
     }
 }

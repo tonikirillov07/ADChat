@@ -29,9 +29,8 @@ public class WelcomeActivityBase extends AppCompatActivity {
         });
 
         Button buttonNext = findViewById(R.id.buttonNext);
-        ImageButton buttonBack = findViewById(R.id.backButton);
 
-        BackButton.init(buttonBack);
+        BackButton.init(this);
         buttonNext.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, QuestionsActivityBase.class, false));
 
         TextView haveAccountTextView = findViewById(R.id.haveAccountTextView);

@@ -1,6 +1,7 @@
 package com.tg.let.base.activities.settings.accountSettings;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
@@ -10,9 +11,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.tg.let.R;
+import com.tg.let.utils.AnotherActivity;
 import com.tg.let.utils.BackButton;
 
 public class AccountSettingsBaseActivity extends AppCompatActivity {
+    private Button changeEmailButton, changePasswordButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +28,17 @@ public class AccountSettingsBaseActivity extends AppCompatActivity {
             return insets;
         });
 
-        ImageButton backButton = findViewById(R.id.backButton);
+        changeEmailButton = findViewById(R.id.changeEmailButton);
+        changePasswordButton = findViewById(R.id.changePasswordButton);
 
-        BackButton.init(backButton);
+        initButtons();
+        BackButton.init(this);
     }
+
+    private void initButtons() {
+        changePasswordButton.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, PasswordChangingBaseActivity.class, false));
+        changeEmailButton.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, EmailChangingBaseActivity.class, false));
+    }
+
+
 }

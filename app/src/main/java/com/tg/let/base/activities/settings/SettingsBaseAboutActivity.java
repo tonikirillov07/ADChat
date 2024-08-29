@@ -29,11 +29,10 @@ public class SettingsBaseAboutActivity extends AppCompatActivity {
             return insets;
         });
 
-        ImageButton backButton = findViewById(R.id.backButton);
         aboutInfoTextView = findViewById(R.id.aboutInfoTextView);
 
         writeAppInfo();
-        BackButton.init(backButton);
+        BackButton.init(this);
     }
 
     private void writeAppInfo() {

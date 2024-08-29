@@ -36,7 +36,6 @@ public class EnterInAccountActivity extends AppCompatActivity {
             return insets;
         });
 
-        ImageButton backButton = findViewById(R.id.backButton);
         Button forgotPasswordButton = findViewById(R.id.forgotPasswordButton);
         Button buttonNext = findViewById(R.id.buttonNext);
         emailEditText = findViewById(R.id.emailEditText);
@@ -44,7 +43,7 @@ public class EnterInAccountActivity extends AppCompatActivity {
 
         forgotPasswordButton.setOnClickListener(v -> AnotherActivity.gotoAnotherActivity(this, PasswordRestoringBaseActivity.class, false));
         buttonNext.setOnClickListener(v -> onButtonNextAction());
-        BackButton.init(backButton);
+        BackButton.init(this);
     }
 
     private void onButtonNextAction(){

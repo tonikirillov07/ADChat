@@ -35,11 +35,10 @@ public class SettingsMenuBaseActivity extends AppCompatActivity {
             return insets;
         });
 
-        ImageButton backButton = findViewById(R.id.backButton);
         recyclerView = findViewById(R.id.recyclerView);
 
         initRecyclerView();
-        BackButton.init(backButton);
+        BackButton.init(this);
     }
 
     private void initRecyclerView() {

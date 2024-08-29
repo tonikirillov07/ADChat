@@ -47,14 +47,13 @@ public class AccountActivityBase extends AppCompatActivity {
 
         Button buttonNext = findViewById(R.id.buttonNext);
         Button buttonTryWithoutAccount = findViewById(R.id.buttonTryWithoutAccount);
-        ImageButton buttonBack = findViewById(R.id.backButton);
         emailEditText = findViewById(R.id.emailEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
         TextView generateStrongPasswordTextView = findViewById(R.id.generateStrongPasswordTextView);
 
         generateStrongPasswordTextView.setOnClickListener(v -> generateStrongPassword());
         buttonNext.setOnClickListener(v -> onNextButtonAction());
-        BackButton.init(buttonBack);
+        BackButton.init(this);
     }
 
     private void generateStrongPassword() {

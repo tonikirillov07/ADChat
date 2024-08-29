@@ -29,12 +29,11 @@ public class PasswordRestoringBaseActivity extends AppCompatActivity {
             return insets;
         });
 
-        ImageButton buttonBack = findViewById(R.id.backButton);
         Button buttonNext = findViewById(R.id.buttonNext);
         emailEditText = findViewById(R.id.emailEditText);
 
         buttonNext.setOnClickListener(v -> onNextButtonAction());
-        BackButton.init(buttonBack);
+        BackButton.init(this);
     }
 
     private void onNextButtonAction(){

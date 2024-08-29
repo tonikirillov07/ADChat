@@ -32,10 +32,9 @@ public class QuestionsActivityBase extends AppCompatActivity {
         });
 
         radioGroup = findViewById(R.id.radioGroup);
-        ImageButton buttonBack = findViewById(R.id.backButton);
         Button buttonNext = findViewById(R.id.buttonNext);
 
-        BackButton.init(buttonBack);
+        BackButton.init(this);
         buttonNext.setOnClickListener(v -> onNextButtonAction());
     }
 
